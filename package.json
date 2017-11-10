@@ -7,9 +7,15 @@
   "author": "Kent Delante <kdelante14@gmail.com>",
   "license": "GPL-3.0",
   "private": false,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
   "devDependencies": {
+    "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.6.0",
     "pug": "^2.0.0-rc.4",
