@@ -8,8 +8,8 @@
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
-      "watch-css":"node-sass -wr src/sass -o css app.min.css --output-style compressed",
-      "build-css": "node-sass -r src/sass -o css app.min.css --output-style compressed"
+      "watch-css":"node-sass -wr src/sass -o public/css app.min.css --output-style compressed",
+      "build-css": "node-sass -r src/sass -o public/css app.min.css --output-style compressed"
   },
   "devDependencies": {
     "node-sass": "^4.6.0"
