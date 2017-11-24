@@ -8,10 +8,14 @@
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
-      "watch-css":"node-sass -wr src/sass -o public/css app.min.css --output-style compressed",
-      "build-css": "node-sass -r src/sass -o public/css app.min.css --output-style compressed"
+    "styles:watch": "node-sass -wr src/sass -o public/css app.min.css --output-style compressed",
+    "styles:build": "node-sass -r src/sass -o src/css app.css --output-style expanded && postcss src/css/application.css -c postcss.config.js -o public/css/app.min.css"
   },
   "devDependencies": {
-    "node-sass": "^4.6.0"
+    "autoprefixer": "^7.1.6",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.6.0",
+    "postcss": "^6.0.14",
+    "postcss-cli": "^4.1.1"
   }
 }
