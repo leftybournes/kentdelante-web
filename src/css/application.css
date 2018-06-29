@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
 html, body {
   font-size: 16px;
-  font-family: Roboto;
-  width: 100%;
-  padding: 0;
+  font-family: Roboto, sans-serif;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
@@ -12,142 +12,59 @@ body {
   font-weight: 300;
 }
 
-.container {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media screen and (min-width: 280px) {
-  .container {
-    max-width: 268px;
-  }
-}
-
-@media screen and (min-width: 368px) {
-  .container {
-    max-width: 340px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media screen and (min-width: 968px) {
-  .container {
-    max-width: 940px;
-  }
-}
-
-.material {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
-}
-
-.mtrl-card {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 2px;
-}
-
-.mtrl-hover:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
-}
-
-#about {
-  display: absolute;
-  background-color: #12254a;
-  text-align: center;
+article {
+  align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 10px 0;
-  color: #eee;
+  height: 100vh;
 }
 
-#about a {
+.about {
+  background-color: #12254a;
+  color: #eee;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.about .img-profile {
+  flex-shrink: 0;
+}
+
+.about a {
   text-decoration: none;
   color: #eee;
 }
 
-#about .blog-link {
-  display: block;
-  text-align: right;
-  color: #eee;
-  font-size: 1.5rem;
-}
-
-#about .img-profile {
-  align-self: center;
-}
-
-#about .author {
+.about .author {
   font-weight: 100;
   font-size: 4rem;
   margin: 0 auto;
 }
 
-#about .author em {
+.about .author em {
   font-style: normal;
 }
 
-#about .title {
+.about .title {
   font-size: 2rem;
   margin: 10px 0;
 }
 
-#about .personal-lnks {
+.about .personal-lnks {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-#about .personal-lnk {
+.about .personal-lnk {
+  height: 48px;
   margin: 10px 20px 20px 20px;
+  width: auto;
 }
 
-#demo {
-  padding: 20px 0;
-}
-
-#demo p {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-#demo p em {
-  font-style: normal;
-}
-
-#demo .devices {
-  display: flex;
-  flex-direction: row;
+.projects {
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-end;
-}
-
-#demo .device {
-  margin: 10px;
-  flex-shrink: 0;
 }
 
 footer {

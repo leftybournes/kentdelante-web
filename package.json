@@ -1,14 +1,14 @@
 {
-  "name": "kdelante14.gitlab.com",
+  "name": "kdeleteme.gitlab.io",
   "version": "0.1.0",
   "description": "Personal gitlab frontpage and portfolio",
   "main": "index.js",
-  "repository": "https://gitlab.com/kdelante14/kdelante14.gitlab.io.git",
+  "repository": "https://gitlab.com/kdeleteme/kdeleteme.gitlab.io.git",
   "author": "Kent Delante <kdelante14@gmail.com>",
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
-    "styles:watch": "node-sass -wr src/sass -o public/css app.min.css --output-style compressed",
+    "styles:watch": "node-sass -wr src/sass/application.scss public/css/app.min.css --output-style compressed",
     "styles:build": "node-sass -r src/sass -o src/css app.css --output-style expanded && postcss src/css/application.css -c postcss.config.js -o public/css/app.min.css"
   },
   "devDependencies": {
