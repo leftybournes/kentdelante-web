@@ -1,4 +1,8 @@
 .projects {
     flex-wrap: wrap;    
     justify-content: space-evenly;
+
+    &__project {
+        margin: 0 12px;
+    }
 }

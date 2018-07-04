@@ -67,6 +67,10 @@ article {
   justify-content: space-evenly;
 }
 
+.projects__project {
+  margin: 0 12px;
+}
+
 footer {
   text-align: center;
 }
