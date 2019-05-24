@@ -4,7 +4,7 @@
   "description": "Personal gitlab frontpage and portfolio",
   "main": "index.js",
   "repository": "https://gitlab.com/kdeleteme/kdeleteme.gitlab.io.git",
-  "author": "Kent Delante <kdelante14@gmail.com>",
+  "author": "Kent Delante <kdeleteme@tutanota.com.com>",
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
@@ -12,10 +12,10 @@
     "styles:build": "node-sass -r src/sass -o src/css app.css --output-style expanded && postcss src/css/application.css -c postcss.config.js -o public/css/app.min.css"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
-    "cssnano": "^3.10.0",
-    "node-sass": "^4.6.0",
-    "postcss": "^6.0.14",
-    "postcss-cli": "^4.1.1"
+    "autoprefixer": "^9.5",
+    "cssnano": "^4.1",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0",
+    "postcss-cli": "^6.1"
   }
 }
