@@ -1,9 +1,6 @@
 {
-  "name": "kdeleteme.gitlab.io",
   "description": "Personal gitlab frontpage and portfolio",
   "main": "index.js",
-  "repository": "https://gitlab.com/kdeleteme/kdeleteme.gitlab.io.git",
-  "author": "Kent Delante <kdeleteme@tutanota.com.com>",
   "private": false,
   "scripts": {
     "styles:watch": "node-sass -wr src/sass/application.scss public/css/app.min.css --output-style compressed",
@@ -16,6 +13,9 @@
     "postcss": "^7.0",
     "postcss-cli": "^6.1"
   }
+    "name": "leftybournes.gitlab.io",
     "version": "1.0.0",
+    "repository": "https://gitlab.com/leftybournes/kdeleteme.gitlab.io.git",
+    "author": "Kent Delante <leftybournes@pm.me>",
     "license": "GPL-3.0-or-later",
 }
