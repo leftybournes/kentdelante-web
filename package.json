@@ -1,6 +1,5 @@
 {
   "name": "kdeleteme.gitlab.io",
-  "version": "0.1.0",
   "description": "Personal gitlab frontpage and portfolio",
   "main": "index.js",
   "repository": "https://gitlab.com/kdeleteme/kdeleteme.gitlab.io.git",
@@ -17,5 +16,6 @@
     "postcss": "^7.0",
     "postcss-cli": "^6.1"
   }
+    "version": "1.0.0",
     "license": "GPL-3.0-or-later",
 }
