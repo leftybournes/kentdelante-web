@@ -32,3 +32,19 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .about {
+        &__avatar {
+            width: 60vw;
+        }
+
+        &__author {
+            font-size: 3rem;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+    }
+}
