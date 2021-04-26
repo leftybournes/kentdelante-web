@@ -14,6 +14,9 @@
 	    <link rel="canonical" href="https://www.leftybournes.com" />
         <link rel="stylesheet" media="screen"
               href="https://fontlibrary.org//face/roboto"
+              type="text/css" />
+        <link rel="stylesheet" media="screen"
+              href="https://fontlibrary.org//face/roboto-mono"
               type="text/css" /> 
 	    <link rel="stylesheet" href="css/styles.scss" />
 
@@ -60,6 +63,46 @@
 	    </section>
 
         <section class="skills">
+            <div class="container">
+                <section class="skills__webdev">
+                    <p class="skills__webdev__caption">I create ....</p>
+                    <img class="skills__webdev__img"
+                         src="img/beautiful_websites.svg"
+                         alt="Different screen sizes showing responsive design" />
+                    <p class="skills__webdev__caption">beautiful websites</p>
+                </section>
+            </div>
+            <section class="skills__appdev">
+                <div class="container">
+                    <p class="skills__appdev__caption">I build ...</p>
+                    <div class="skills__appdev__demoContainer">
+                        <img class="skills__appdev__demoContainer__img"
+                             src="img/appdev.svg"
+                             alt="A mobile screen with the message, &quot;Hello World&quot;&" />
+                        <div class="skills__appdev__demoContainer__code">
+                            <p class="skills__appdev__demoContainer__code__composable">
+                                @Composable
+                            </p>
+                            <p class="skills__appdev__demoContainer__code__functionOpen">
+                                fun SayHello() {
+                            </p>
+                            <p class="skills__appdev__demoContainer__code__textOpen">
+                                Text(
+                            </p>
+                            <p class="skills__appdev__demoContainer__code__message">
+                                text = Hello, World!
+                            </p>
+                            <p class="skills__appdev__demoContainer__code__textClose">
+                                )
+                            </p>
+                            <p class="skills__appdev__demoContainer__code__functionClose">
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <p class="skills__appdev__caption">awesome apps</p>
+                </div>
+            </section>
         </section>
 
 	    <section class="projects">

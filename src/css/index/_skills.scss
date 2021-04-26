@@ -1,0 +1,87 @@
+.skills {
+    .container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__webdev, &__appdev {
+        padding: 64px 0;
+    }
+
+    &__webdev {
+        width: 100%;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        &__caption {
+            font-size: 3rem;
+            font-family: "RobotoBold";
+            font-weight: $bold;
+            text-align: center;
+
+            margin: 96px 0;
+        }
+    }
+
+    &__appdev {
+        width: 100%;
+        background-color: $apps;
+
+        &__caption {
+            font-size: 3rem;
+            font-family: "RobotoBold";
+            font-weight: $bold;
+            text-align: center;
+
+            margin: 96px 0;
+        }
+
+        &__demoContainer {
+            width: 100%;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            &__img {
+                height: 50vh;
+            }
+
+            &__code {
+                background-color: #222;
+                padding: 24px 48px 32px 48px;
+                border-radius: 12px;
+
+                font-family: "RobotoMono";
+                font-weight: $regular;
+                font-size: 1.5rem;
+
+                &__composable {
+                    color: #dddd19;
+                    margin-bottom: 0;
+                }
+
+                &__functionOpen, &__functionClose {
+                    color: #ff8315;
+                    margin: 8px 0 0 0;
+                }
+
+                &__textOpen, &__textClose {
+                    color: #ccc;;
+                    margin: 8px 0 0 48px;
+                }
+
+                &__message {
+                    color: #157bff;
+                    margin: 8px 0 0 96px;
+                }
+            }
+        }
+    }
+}

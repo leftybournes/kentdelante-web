@@ -4,22 +4,7 @@
 @import "nav";
 
 @import "index/about";
-
-
-.about a {
-    text-decoration: none;
-    color: #eee;
-}
-
-.about .personal-lnks {
-    display: flex;
-}
-
-.about .personal-lnk {
-    height: 48px;
-    margin: 10px 20px 20px 20px;
-    width: auto;
-}
+@import "index/skills";
 
 .projects {
     flex-wrap: wrap;
