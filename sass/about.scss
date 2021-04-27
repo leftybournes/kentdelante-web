@@ -5,10 +5,5 @@
 @import "footer";
 
 .page {
-    padding: 48px 0;
-    flex-grow: 1;
-
-    &, .footer {
-        flex-shrink: 0;
-    }
+    padding: 12px 0;
 }
