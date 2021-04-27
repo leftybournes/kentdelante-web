@@ -1,11 +1,9 @@
-image: alpine:latest
+stages:
+  - build
 
-pages:
-  stage: deploy
+build-job:
+  stage: build
   script:
-  - echo 'Nothing to do...'
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+    - echo "Test if project builds"
+    - npm install
+    - npm run build
