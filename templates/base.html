@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+              integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+              crossorigin="anonymous" />
+	    <link rel="canonical" href="https://www.leftybournes.com" />
+        <link rel="stylesheet" media="screen"
+              href="https://fontlibrary.org//face/roboto"
+              type="text/css" />
+        <link rel="stylesheet" media="screen"
+              href="https://fontlibrary.org//face/roboto-mono"
+              type="text/css" />
+        <link rel="stylesheet" type="text/css"
+              href="{% block styles %}{% endblock styles %}" />
+
+	    <title>Kent Delante | {% block title %}{% endblock title %}</title>
+    </head>
+
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__list__element">
+                        <a class="nav__list__element__link {% block homeActiveState %}{% endblock homeActiveState%}"
+                           href="/">
+
+                            home
+                        </a>
+                    </li>
+                    <li class="nav__list__element">
+                        <a class="nav__list__element__link {% block aboutActiveState %}{% endblock aboutActiveState%}"
+                           href="/about">
+                            about
+                        </a>
+                    </li>
+                    <li class="nav__list__element">
+                        <a class="nav__list__element__link {% block blogActiveState %}{% endblock blogActiveState%}"
+                           href="/blog">
+                            blog
+                        </a>
+                    </li>
+                    <li class="nav__list__element">
+                        <a class="nav__list__element__link {% block contactActiveState %}{% endblock contactActiveState%}"
+                           href="/contact">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        {% block content %}
+        {% endblock content %}
+        <footer class="footer">
+	        <p class="footer__copyright">&#169; 2021 Kent Delante</p>
+            <p class="footer__contentLicense">The contents of this website are licensed under the Creative
+                Commons Attribution-ShareAlike License
+                (CC BY-SA 4.0 International)</p>
+            <p class="footer__sourceLicense">
+                The <a class="footer__sourceLicense__link"
+                       href="https://www.gitlab.com/leftybournes/leftybournes.gitlab.io"
+                       rel="noreferrer noopener" />source code</a> of this
+                website is available under the
+                GNU General Public License version 3.0 or later
+            </p>
+        </footer>
+    </body>
+</html>
