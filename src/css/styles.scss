@@ -5,15 +5,8 @@
 
 @import "index/about";
 @import "index/skills";
+@import "index/projects";
 
-.projects {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.projects__project {
-    margin: 0 12px;
-}
 
 footer {
     text-align: center;
