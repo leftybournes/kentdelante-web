@@ -10,13 +10,13 @@
     justify-content: center;
     align-items: center;
 
-    &__avatar, &__title {
+    &__avatar {
         margin: 0;
     }
 
     &__author {
         margin-top: 4vh;
-        margin-bottom: 4px;
+        margin-bottom: 0;
         font-family: "RobotoBold";
         font-weight: $bold;
         font-size: 4rem;
@@ -24,11 +24,18 @@
 
     &__title {
         font-size: 2rem;
-        margin-top: 8px;
+        margin: 0;
     }
 
-    &__title, &__article {
-        font-weight: $light;
+    &__links {
+        display: flex;
+
+        margin-top: 46px;
+
+        &__link {
+            color: #ccc;
+            margin: 0 12px;
+        }
     }
 }
 
