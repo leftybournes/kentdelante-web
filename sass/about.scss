@@ -4,6 +4,14 @@
 @import "nav";
 @import "footer";
 
-.page {
+.page, {
     padding: 12px 0;
+
+    &, .nav {
+        flex: 1 0 auto;
+    }
+}
+
+.footer {
+    flex-shrink: 0;
 }
