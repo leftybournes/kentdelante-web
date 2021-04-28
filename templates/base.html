@@ -21,7 +21,7 @@
         <link rel="stylesheet" type="text/css"
               href="{% block styles %}{% endblock styles %}" />
 
-	    <title>Kent Delante | {% block title %}{% endblock title %}</title>
+	    <title>{% block title %}{% endblock title %} | Kent Delante</title>
     </head>
 
     <body>
@@ -31,7 +31,6 @@
                     <li class="nav__list__element">
                         <a class="nav__list__element__link {% block homeActiveState %}{% endblock homeActiveState%}"
                            href="/">
-
                             home
                         </a>
                     </li>
