@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ page.title }}
+{% endblock title %}
+
+{% block styles %}
+/article.css
+{% endblock styles %}
+
+{% block blogActiveState %}
+nav__list__element__link--active
+{% endblock blogActiveState %}
+
+{% block content %}
+<section class="article">
+    <div class="container">
+        <a class="article__linkTop" href="/blog">back to top</a>
+        <h1 class="article__title">{{ page.title }}</h1>
+        <p class="article__date">{{ page.date | date(format="%B %d, %Y", timezone="Asia/Manila") }}</p>
+
+        {{ page.content | safe }}
+    </div>
+</section>
+{% endblock content %}
