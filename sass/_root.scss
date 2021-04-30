@@ -16,6 +16,16 @@ body {
     flex-direction: column;
 }
 
+a {
+    color: $hyperlink-color;
+    text-decoration: none;
+
+    &:hover, &:visited {
+        color: $hyperlink-color;
+        text-decoration: underline;
+    }
+}
+
 .container {
     width: 80vw;
     margin: 0 auto;
