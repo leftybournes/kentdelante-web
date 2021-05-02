@@ -21,7 +21,7 @@ a {
     color: $hyperlink-color;
     text-decoration: none;
 
-    &:hover, &:visited {
+    &:hover {
         color: $hyperlink-color;
         text-decoration: underline;
     }
