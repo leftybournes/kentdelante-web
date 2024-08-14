@@ -1,7 +1,12 @@
+@import url("@fontsource/roboto/index.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@layer base {
+	html {
+		font-family: "Roboto",  "Helvetica", sans-serif;
+	}
 }
+
