@@ -1,9 +1,0 @@
-stages:
-  - build
-
-build-job:
-  stage: build
-  script:
-    - echo "Test if project builds"
-    - npm install
-    - npm run build
