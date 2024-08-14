@@ -4,7 +4,12 @@ export default {
 	"./index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+	  animation: {
+		"spin-slow": "spin 5s linear infinite",
+		"spin-slow-reverse": "spin 5s linear infinite reverse"
+	  }
+	},
   },
   plugins: [],
 }

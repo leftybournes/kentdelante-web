@@ -13,13 +13,18 @@
 		<header class="bg-[#475161] pt-8">
 			<div class="container mx-auto flex flex-row flex-nowrap px-4
 						w-full justify-between items-center lg:px-0">
-				<section class="branding">
-					<a class="flex flex-row flex-nowrap" href="/">
+				<section>
+					<a class="flex flex-row flex-nowrap items-center" href="/">
 						<img class="w-[40px]" src="/img/logo.svg">
-						<span class="text-[26px] text-[#ffffff]
-									 ms-2 font-medium">
-							KD
-						</span>
+						<h1 class="text-[22px] sm:text-[26px] text-[#ffffff]
+								   ms-2 font-medium">
+							<span class="hidden lg:inline">
+								KD
+							</span>
+							<span class="lg:hidden">
+								Kent D. Delante
+							</span>
+						</h1>
 					</a>
 				</section>
 				<section class="lg:flex">
@@ -38,10 +43,10 @@
 						</svg>
 					</label>
 					<input type="checkbox" id="nav-toggle" class="peer hidden">
-					<nav class="absolute w-screen h-[88vh] top-0 -mt-[100vh]
+					<nav class="absolute w-screen h-[88vh] top-0 -mt-[100vh] z-50
 								ps-14 lg:my-auto left-0 peer-checked:mt-[78px]
-								bg-[#475161cc] lg:mt-0 lg:w-auto lg:h-auto
-								lg:static lg:bg-transparent">
+								bg-[#475161ef] lg:mt-0 lg:w-auto lg:h-auto
+								lg:static lg:bg-transparent lg:z-0">
 						<ul class="flex flex-col gap-x-12 text-[#ffffff] content-center
 								   text-3xl gap-y-8 mt-8 font-medium lg:flex-row lg:mt-0
 								   lg:flex-nowrap lg:text-2xl">
@@ -56,5 +61,43 @@
 				</section>
 			</div>
 		</header>
+		<main class="bg-[#475161] pt-[8rem] overflow-x-hidden px-8">
+			<div class="container mx-auto flex flex-col gap-x-4 lg:flex-row-reverse
+						lg:flex-nowrap lg:justify-between">
+				<section>
+					<div class="bg-gradient-to-r from-[#c46a71] to-[#FCCAB5]
+								w-[75vw] h-[75vw] mx-auto max-w-[650px]
+								max-h-[650px] p-4 rounded-full
+								animate-spin-slow md:p-4 lg:p-6">
+						<div class="bg-gradient-to-tr from-[#475161] w-full
+									h-full to-[#999999] rounded-full m-auto
+									animate-spin-slow-reverse rounded-full">
+							<img src="/img/banner-image.svg"
+								 class="w-full h-full m-auto">
+						</div>
+					</div>
+				</section>
+				<section class="flex flex-col justify-center mt-8 lg:mt-0">
+					<h2 class="text-[#D0887B] text-[48px] font-semibold hidden
+							   lg:block">
+						Kent D. Delante
+					</h2>
+					<h3 class="text-white text-[32px] font-medium">
+						Transforming Ideas into Elegant Solutions
+					</h3>
+					<p class="text-white text-[24px] mt-8 lg:w-[40ch]">
+						Crafting user-centric designs and innovative
+						applications, driven by passion for quality,
+						engagement and exceptional digital experience.
+					</p>
+					<button type="button"
+								  class="text-[#475161] text-[18px] bg-white w-max
+								  py-2 px-4 mt-8 rounded-tr-lg rounded-br-lg
+								  rounded-bl-lg">
+						Schedule a Meeting
+					</button>
+				</section>
+			</div>
+		</main>
 	</body>
 </html>
