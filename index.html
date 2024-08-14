@@ -10,20 +10,41 @@
 		<title>Kent D. Delante</title>
 	</head>
 	<body>
-		<header class="bg-[#475161]">
-			<div class="container mx-auto flex flex-row flex-nowrap w-full
-						justify-between">
+		<header class="bg-[#475161] pt-8">
+			<div class="container mx-auto flex flex-row flex-nowrap px-4
+						w-full justify-between items-center lg:px-0">
 				<section class="branding">
 					<a class="flex flex-row flex-nowrap" href="/">
-						<img src="/img/logo.svg">
-						<span class="text-[35px] text-[#dddddd] ms-2 fw-[500]">
+						<img class="w-[40px]" src="/img/logo.svg">
+						<span class="text-[26px] text-[#ffffff]
+									 ms-2 font-medium">
 							KD
 						</span>
 					</a>
 				</section>
-				<section>
-					<nav>
-						<ul>
+				<section class="lg:flex">
+					<label for="nav-toggle"
+						   class="block text-white lg:hidden border-2
+								rounded-full p-2 cursor-pointer">
+						<svg xmlns="http://www.w3.org/2000/svg"
+							 fill="none"
+							 viewBox="0 0 24 24"
+							 stroke-width="1.5"
+							 stroke="currentColor"
+							 class="size-6">
+							<path stroke-linecap="round"
+								  stroke-linejoin="round"
+								  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+					</label>
+					<input type="checkbox" id="nav-toggle" class="peer hidden">
+					<nav class="absolute w-screen h-[88vh] top-0 -mt-[100vh]
+								ps-14 lg:my-auto left-0 peer-checked:mt-[78px]
+								bg-[#475161cc] lg:mt-0 lg:w-auto lg:h-auto
+								lg:static lg:bg-transparent">
+						<ul class="flex flex-col gap-x-12 text-[#ffffff] content-center
+								   text-3xl gap-y-8 mt-8 font-medium lg:flex-row lg:mt-0
+								   lg:flex-nowrap lg:text-2xl">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About me</a></li>
 							<li><a href="#">Projects</a></li>
@@ -32,20 +53,6 @@
 							<li><a href="#">Contact me</a></li>
 						</ul>
 					</nav>
-					<button>
-						<div class="text-white">
-							<svg xmlns="http://www.w3.org/2000/svg"
-								 fill="none"
-								 viewBox="0 0 24 24"
-								 stroke-width="1.5"
-								 stroke="currentColor"
-								 class="size-6">
-								<path stroke-linecap="round"
-									  stroke-linejoin="round"
-									  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-							</svg>
-						</div>
-					</button>
 				</section>
 			</div>
 		</header>
