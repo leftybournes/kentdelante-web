@@ -52,12 +52,12 @@
 								   content-center text-3xl gap-y-8 mt-8
 								   font-medium lg:flex-row lg:mt-0
 								   lg:flex-nowrap lg:text-2xl">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About me</a></li>
-							<li><a href="#">Projects</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact me</a></li>
+							<li><a href="/">Home</a></li>
+							<li><a href="#about">About me</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact me</a></li>
 						</ul>
 					</nav>
 				</section>
@@ -86,7 +86,8 @@
 							</div>
 						</div>
 					</section>
-					<section class="flex flex-col justify-between lg:mt-0">
+					<section id="banner"
+							 class="flex flex-col justify-between lg:mt-0">
 						<div class="hidden lg:block"></div>
 						<div class="mt-8 lg:mt-0">
 							<div class="text-[#D0887B] text-6xl font-semibold
@@ -109,8 +110,9 @@
 							</button>
 						</div>
 						<div class="hidden lg:inline-block mt-16">
-							<button class="text-white flex flex-row flex-nowrap
-										   items-center group">
+							<a href="#about"
+							   class="text-white flex flex-row flex-nowrap
+									 items-center group">
 								<div class="border border-[#5D6674] p-4
 											rounded-full
 											group-hover:border-white
@@ -129,12 +131,12 @@
 								<div class="ms-4 text-2xl">
 									Learn more about me
 								</div>
-							</button>
+							</a>
 						</div>
 					</section>
 				</div>
 			</section>
-			<section class="mt-24 px-8 lg:mt-48">
+			<section id="about" class="py-24 px-8 lg:py-48">
 				<div class="container mx-auto">
 					<article class="flex flex-col items-center lg:flex-row
 									lg:flex-nowrap lg:justify-between
@@ -177,8 +179,9 @@
 					</article>
 					<div>
 						<div class="hidden lg:inline-block mt-16">
-							<button class="text-white flex flex-row flex-nowrap
-										   items-center group">
+							<a href="#skills"
+							   class="text-white flex flex-row flex-nowrap
+									 items-center group">
 								<div class="border border-[#5D6674] p-4
 											rounded-full
 											group-hover:border-white
@@ -197,12 +200,12 @@
 								<div class="ms-4 text-2xl">
 									Learn more about me
 								</div>
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="mt-24 pb-16 lg:mt-48">
+			<section id="skills" class="py-24 pb-16 lg:py-48">
 				<div class="container mx-auto">
 					<h2 class="text-center text-4xl text-white font-medium
 							   mb-16">
@@ -244,7 +247,7 @@
 						</ul>
 					</section>
 					<section class="bg-[#5D667459] p-16 pb-48 border
-									text-white rounded-2xl border-neutral-400">
+								 text-white rounded-2xl border-neutral-400">
 						<h3 class="font-semibold text-2xl">DevOps</h3>
 						<ul class="list-disc mt-4 ms-4 text-xl font-normal">
 							<li>Python</li>
@@ -259,8 +262,9 @@
 					</section>
 				</div>
 			</section>
-			<section class="bg-[url('/img/services.png')] bg-no-repeat
-							bg-cover saturate-50 py-24">
+			<section id="services"
+					 class="bg-[url('/img/services.png')] bg-no-repeat
+						 bg-cover saturate-50 py-24 md:py-48">
 				<h2 class="text-4xl font-medium text-center
 						   text-white">
 					My Expertise and Services
@@ -376,7 +380,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="py-24 container mx-auto">
+			<section id="projects" class="py-24 container mx-auto md:py-48">
 				<h2 class="text-center text-4xl text-white font-medium">
 					Recent Works
 				</h2>
@@ -648,7 +652,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="container mx-auto py-16">
+			<section id="blog" class="container mx-auto py-24 md:py-48">
 				<h2 class="text-white text-4xl font-medium text-center">
 					Read My Blog
 				</h2>
@@ -701,7 +705,7 @@
 					Read more blogs
 				</div>
 			</section>
-			<section class="py-16 container mx-auto">
+			<section id="contact" class="py-24 container mx-auto md:py-48">
 				<h2 class="text-4xl font-medium text-white text-center">
 					Ready to Transform Your Ideas Into Reality?
 				</h2>
