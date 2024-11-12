@@ -16,6 +16,7 @@
     "vite": "^5.4.0"
   },
   "dependencies": {
+    "@fontsource/josefin-sans": "^5.1.0",
     "@fontsource/roboto": "^5.0.14"
   }
 }

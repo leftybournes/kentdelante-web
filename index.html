@@ -1,769 +1,748 @@
 <!DOCTYPE html>
 
 <html lang="en" class="scroll-smooth">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link rel="favicon" href="/img/logo.svg" type="image/svg+xml" sizes="any">
-		<link rel="stylesheet" type="text/css" href="/src/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Kent D. Delante</title>
-	</head>
-	<body class="antialiased bg-gradient-to-r from-[#25283E] to-[#475161]">
-		<header class="pt-8">
-			<div class="container mx-auto flex flex-row flex-nowrap px-4
-						w-full justify-between items-center lg:px-0">
-				<section>
-					<a class="flex flex-row flex-nowrap items-center" href="/">
-						<img class="w-[40px]" src="/img/logo.svg">
-						<h1 class="text-[22px] sm:text-[26px] text-[#ffffff]
-								   ms-2 font-medium">
-							<span class="hidden lg:inline">
-								KD
-							</span>
-							<span class="lg:hidden">
-								Kent D. Delante
-							</span>
-						</h1>
-					</a>
-				</section>
-				<section class="lg:flex">
-					<label for="nav-toggle"
-						   class="block text-white lg:hidden border-2
-								rounded-full p-2 cursor-pointer">
-						<svg xmlns="http://www.w3.org/2000/svg"
-							 fill="none"
-							 viewBox="0 0 24 24"
-							 stroke-width="1.5"
-							 stroke="currentColor"
-							 class="size-6">
-							<path stroke-linecap="round"
-								  stroke-linejoin="round"
-								  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-						</svg>
-					</label>
-					<input type="checkbox" id="nav-toggle" class="peer hidden">
-					<nav class="absolute w-screen h-[88vh] top-0 -mt-[100vh]
-								z-50 ps-14 lg:my-auto left-0
-								peer-checked:mt-[78px] bg-[#475161ef] lg:mt-0
-								lg:w-auto lg:h-auto lg:static lg:bg-transparent
-								lg:z-0">
-						<ul class="flex flex-col gap-x-12 text-[#ffffff]
-								   content-center text-3xl gap-y-8 mt-8
-								   font-medium lg:flex-row lg:mt-0
-								   lg:flex-nowrap lg:text-2xl">
-							<li><a href="/">Home</a></li>
-							<li><a href="#about">About me</a></li>
-							<li><a href="#services">Services</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#blog">Blog</a></li>
-							<li><a href="#contact">Contact me</a></li>
-						</ul>
-					</nav>
-				</section>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="favicon" href="/img/logo.svg" type="image/svg+xml" sizes="any">
+	<link rel="stylesheet" type="text/css" href="/src/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kent D. Delante</title>
+  </head>
+  <body class="antialiased bg-gradient-to-r from-[#25283E] to-[#475161]">
+	<header class="pt-8">
+	  <div class="container mx-auto flex flex-row flex-nowrap px-4
+				  w-full justify-between items-center lg:px-0">
+		<section>
+		  <a class="flex flex-row flex-nowrap items-center" href="/">
+			<img class="w-[40px]" src="/img/logo.svg">
+			<h1 class="text-[22px] sm:text-[26px] text-[#ffffff]
+					   ms-2 font-medium">
+			  <span class="hidden lg:inline">
+				KD
+			  </span>
+			  <span class="lg:hidden">
+				Kent D. Delante
+			  </span>
+			</h1>
+		  </a>
+		</section>
+		<section class="lg:flex">
+		  <label for="nav-toggle"
+				 class="block text-white lg:hidden border-2
+					  rounded-full p-2 cursor-pointer">
+			<svg xmlns="http://www.w3.org/2000/svg"
+				 fill="none"
+				 viewBox="0 0 24 24"
+				 stroke-width="1.5"
+				 stroke="currentColor"
+				 class="size-6">
+			  <path stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+			</svg>
+		  </label>
+		  <input type="checkbox" id="nav-toggle" class="peer hidden">
+		  <nav class="absolute w-screen h-[88vh] top-0 -mt-[100vh]
+					  z-50 ps-14 lg:my-auto left-0
+					  peer-checked:mt-[78px] bg-[#475161ef] lg:mt-0
+					  lg:w-auto lg:h-auto lg:static lg:bg-transparent
+					  lg:z-0">
+			<ul class="flex flex-col gap-x-12 text-[#ffffff]
+					   content-center text-3xl gap-y-8 mt-8
+					   font-medium lg:flex-row lg:mt-0
+					   lg:flex-nowrap lg:text-2xl">
+			  <li><a href="/">Home</a></li>
+			  <li><a href="#about">About me</a></li>
+			  <li><a href="#services">Services</a></li>
+			  <li><a href="#projects">Projects</a></li>
+			  <li><a href="#blog">Blog</a></li>
+			  <li><a href="#contact">Contact me</a></li>
+			</ul>
+		  </nav>
+		</section>
+	  </div>
+	</header>
+	<main class="pt-8 overflow-hidden">
+	  <section class="py-24 px-8 lg:h-screen lg:pb-0">
+		<div class="container mx-auto flex flex-col gap-x-4
+					lg:flex-row-reverse lg:flex-nowrap
+					lg:justify-between">
+		  <section>
+			<div class="bg-gradient-to-r from-[#C46A71] mx-auto
+						to-[#FCCAB5] p-3 rounded-full w-fit
+						animate-spin-slow sm:p-4 xl:p-6">
+			  <div class="bg-gradient-to-tr from-[#475161]
+						  to-[#999999] rounded-full m-auto
+						  w-fit animate-spin-slow-reverse">
+				<img src="/img/hero.png"
+					 width="600px"
+					 height="600px"
+					 class="m-auto w-[70vw] h-[70vw]
+						  -translate-y-4 p-4 max-w-[600px]
+						  max-h-[600px] sm:-translate-y-8
+						  lg:w-[30vw] lg:h-[30vw] xl:w-[40vw]
+						  xl:h-[40vw]">
+			  </div>
 			</div>
-		</header>
-		<main class="pt-[8rem] overflow-hidden">
-			<section class="px-8">
-				<div class="container mx-auto flex flex-col gap-x-4
-							lg:flex-row-reverse lg:flex-nowrap
-							lg:justify-between">
-					<section>
-						<div class="bg-gradient-to-r from-[#C46A71] mx-auto
-									to-[#FCCAB5] p-3 rounded-full w-fit
-									animate-spin-slow sm:p-4 xl:p-6">
-							<div class="bg-gradient-to-tr from-[#475161]
-										to-[#999999] rounded-full m-auto
-										w-fit animate-spin-slow-reverse">
-								<img src="/img/hero.png"
-									 width="600px"
-									 height="600px"
-									 class="m-auto w-[70vw] h-[70vw]
-										  -translate-y-4 p-4 max-w-[600px]
-										  max-h-[600px] sm:-translate-y-8
-										  lg:w-[30vw] lg:h-[30vw] xl:w-[40vw]
-										  xl:h-[40vw]">
-							</div>
-						</div>
-					</section>
-					<section id="banner"
-							 class="flex flex-col justify-between lg:mt-0">
-						<div class="hidden lg:block"></div>
-						<div class="mt-8 lg:mt-0">
-							<div class="text-[#D0887B] text-6xl font-semibold
-									   hidden lg:block">
-								Kent D. Delante
-							</div>
-							<h2 class="text-white text-4xl font-medium my-8">
-								Transforming Ideas into Elegant Solutions
-							</h2>
-							<p class="text-white text-2xl lg:w-[40ch]">
-								Crafting user-centric designs and innovative
-								applications, driven by passion for quality,
-								engagement and exceptional digital experience.
-							</p>
-							<button type="button"
-									class="text-[#475161] text-[18px] bg-white
-										  w-max py-2 px-4 mt-10 rounded-tr-lg
-										  rounded-br-lg rounded-bl-lg">
-								Schedule a Meeting
-							</button>
-						</div>
-						<div class="hidden lg:inline-block mt-16">
-							<a href="#about"
-							   class="text-white flex flex-row flex-nowrap
-									 items-center group">
-								<div class="border border-[#5D6674] p-4
-											rounded-full
-											group-hover:border-white
-											hover:border-white">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										 fill="none"
-										 viewBox="0 0 24 24"
-										 stroke-width="1.5"
-										 stroke="currentColor"
-										 class="size-6">
-										<path stroke-linecap="round"
-											  stroke-linejoin="round"
-											  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-									</svg>
-								</div>
-								<div class="ms-4 text-2xl">
-									Learn more about me
-								</div>
-							</a>
-						</div>
-					</section>
+		  </section>
+		  <section id="banner"
+				   class="flex flex-col justify-between lg:mt-0">
+			<div class="hidden lg:block"></div>
+			<div class="mt-8 lg:mt-0">
+			  <div class="text-[#D0887B] text-6xl font-semibold
+						  font-josefin hidden lg:block">
+				Kent D. Delante
+			  </div>
+			  <h2 class="text-white text-4xl font-medium my-8">
+				Transforming Ideas into Elegant Solutions
+			  </h2>
+			  <p class="text-white text-2xl lg:w-[40ch]">
+				Crafting user-centric designs and innovative
+				applications, driven by passion for quality,
+				engagement and exceptional digital experience.
+			  </p>
+			  <button type="button"
+					  class="text-[#475161] text-[18px] bg-white
+							w-max py-2 px-4 mt-10 rounded-tr-lg
+							font-semibold rounded-br-lg rounded-bl-lg">
+				Message Me
+			  </button>
+			</div>
+			<div class="hidden lg:inline-block mt-16">
+			  <a href="#about"
+				 class="text-white flex flex-row flex-nowrap
+					   items-center group">
+				<div class="border border-[#5D6674] p-4
+							rounded-full
+							group-hover:border-white
+							hover:border-white">
+				  <svg xmlns="http://www.w3.org/2000/svg"
+					   fill="none"
+					   viewBox="0 0 24 24"
+					   stroke-width="1.5"
+					   stroke="currentColor"
+					   class="size-6">
+					<path stroke-linecap="round"
+						  stroke-linejoin="round"
+						  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+				  </svg>
 				</div>
-			</section>
-			<section id="about" class="py-24 px-8 lg:py-48">
-				<div class="container mx-auto">
-					<article class="flex flex-col items-center lg:flex-row
-									lg:flex-nowrap lg:justify-between
-									lg:gap-24">
-						<div class="bg-[#4D576659] shadow-lg
-									rounded-lg lg:w-2/5">
-							<img src="/img/introduction.png"
-								 class="mx-auto w-full max-w-[500px]">
-						</div>
-						<div class="lg:w-3/5">
-							<h2 class="text-4xl text-white font-bold
-									   my-8 md:text-5xl lg:mt-0 lg:mb-16">
-								Hello! I'm Kent Delante, a passionate
-								software developer
-							</h2>
-							<p class="text-[#D9D9D9] text-2xl">
-								I specialize in transforming complex ideas into
-								elegant, user-friendly solutions through
-								innovative design and development. With
-								extensive experience in both front-end and
-								back-end development, I lead and mentor teams
-								to deliver high-quality projects on time.
-							</p>
+				<div class="ms-4 text-2xl">
+				  Learn more about me
+				</div>
+			  </a>
+			</div>
+		  </section>
+		</div>
+	  </section>
+	  <section id="about"
+			   class="py-4 px-8 flex flex-col justify-center lg:h-screen">
+		<div class="container mx-auto">
+		  <article class="flex flex-col items-center lg:flex-row
+						  lg:flex-nowrap lg:justify-between
+						  lg:gap-24">
+			<div class="bg-[#4D576659] shadow-lg
+						rounded-lg lg:w-2/5">
+			  <img src="/img/introduction.png"
+				   class="mx-auto w-full max-w-[500px]">
+			</div>
+			<div class="lg:w-3/5">
+			  <h2 class="text-4xl text-white font-bold font-josefin
+						 my-8 md:text-5xl lg:mt-0 lg:mb-16">
+				Hello! I'm Kent Delante, a passionate
+				software developer
+			  </h2>
+			  <p class="text-[#D9D9D9] text-2xl">
+				I specialize in transforming complex ideas into
+				elegant, user-friendly solutions through
+				innovative design and development. With
+				extensive experience in both front-end and
+				back-end development, I lead and mentor teams
+				to deliver high-quality projects on time.
+			  </p>
 
-							<p class="text-[#D9D9D9] text-2xl my-4">
-								My commitment to continuous learning keeps me
-								at the forefront of emerging technologies, and
-								I enjoy contributing to open-source projects
-								and exploring new development frameworks. When
-								not coding, I engage in community-driven
-								projects.
-							</p>
+			  <p class="text-[#D9D9D9] text-2xl my-4">
+				My commitment to continuous learning keeps me
+				at the forefront of emerging technologies, and
+				I enjoy contributing to open-source projects
+				and exploring new development frameworks. When
+				not coding, I engage in community-driven
+				projects.
+			  </p>
 
-							<p class="text-[#D9D9D9] text-2xl">
-								Thank you for visiting my portfolio. Let's
-								connect and explore opportunities to
-								collaborate!
-							</p>
-						</div>
-					</article>
-					<div>
-						<div class="hidden lg:inline-block mt-16">
-							<a href="#skills"
-							   class="text-white flex flex-row flex-nowrap
-									 items-center group">
-								<div class="border border-[#5D6674] p-4
-											rounded-full
-											group-hover:border-white
-											hover:border-white">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										 fill="none"
-										 viewBox="0 0 24 24"
-										 stroke-width="1.5"
-										 stroke="currentColor"
-										 class="size-6">
-										<path stroke-linecap="round"
-											  stroke-linejoin="round"
-											  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-									</svg>
-								</div>
-								<div class="ms-4 text-2xl">
-									Learn more about me
-								</div>
-							</a>
-						</div>
-					</div>
+			  <p class="text-[#D9D9D9] text-2xl">
+				Thank you for visiting my portfolio. Let's
+				connect and explore opportunities to
+				collaborate!
+			  </p>
+			</div>
+		  </article>
+		  <div>
+			<div class="hidden lg:inline-block mt-16">
+			  <a href="#skills"
+				 class="text-white flex flex-row flex-nowrap
+					   items-center group">
+				<div class="border border-[#5D6674] p-4
+							rounded-full
+							group-hover:border-white
+							hover:border-white">
+				  <svg xmlns="http://www.w3.org/2000/svg"
+					   fill="none"
+					   viewBox="0 0 24 24"
+					   stroke-width="1.5"
+					   stroke="currentColor"
+					   class="size-6">
+					<path stroke-linecap="round"
+						  stroke-linejoin="round"
+						  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+				  </svg>
 				</div>
-			</section>
-			<section id="skills" class="py-24 pb-16 lg:py-48">
-				<div class="container mx-auto">
-					<h2 class="text-center text-4xl text-white font-medium
-							   mb-16">
-						Development Skills
-					</h2>
+				<div class="ms-4 text-2xl">
+				  Learn more about me
 				</div>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <section id="skills"
+			   class="py-16 flex flex-col justify-center lg:h-screen lg:py-0">
+		<div class="container mx-auto">
+		  <h2 class="text-center text-4xl text-white font-medium font-josefin">
+			Development Skills
+		  </h2>
+		</div>
 
-				<div class="flex flex-col gap-4 mx-auto sm:flex-row
-							justify-center container lg:flex-nowrap">
-					<section class="border rounded-2xl p-16
-									pb-48 bg-[#5D667459] text-white
-									border-neutral-400">
-						<h3 class="font-semibold text-2xl">
-							Full-Stack Development
-						</h3>
+		<div class="flex flex-col gap-4 mx-auto sm:flex-row mt-16
+					justify-center container lg:flex-nowrap">
+		  <section class="border rounded-2xl p-16
+						  pb-48 bg-[#5D667459] text-white
+						  border-neutral-400">
+			<h3 class="font-semibold text-2xl">
+			  Full-Stack Development
+			</h3>
 
-						<ul class="list-disc mt-4 ms-4 text-xl font-normal">
-							<li>Laravel</li>
-							<li>Codeigniter</li>
-							<li>Ruby on Rails</li>
-							<li>Phoenix (Elixir)</li>
-							<li>RESTful APIs</li>
-							<li>GraphQL</li>
-						</ul>
-					</section>
-					<section class="bg-[#5D667459] p-16 pb-48 border text-white
-									border-neutral-400 rounded-2xl">
-						<h3 class="font-semibold text-2xl">
-							Front-End Development
-						</h3>
-						<ul class="list-disc mt-4 ms-4 text-xl font-normal">
-							<li>HTML</li>
-							<li>SASS/CSS</li>
-							<li>Javascript/Typescript</li>
-							<li>React.js</li>
-							<li>Vue.js</li>
-							<li>Kotlin</li>
-							<li>Flutter</li>
-						</ul>
-					</section>
-					<section class="bg-[#5D667459] p-16 pb-48 border
-								 text-white rounded-2xl border-neutral-400">
-						<h3 class="font-semibold text-2xl">DevOps</h3>
-						<ul class="list-disc mt-4 ms-4 text-xl font-normal">
-							<li>Python</li>
-							<li>Ruby</li>
-							<li>Bash</li>
-							<li>Docker</li>
-							<li>Ubuntu/Debian</li>
-							<li>Fedora/Alma Linux</li>
-							<li>MySQL, PostgreSQL, SQLite</li>
-							<li>Git</li>
-						</ul>
-					</section>
+			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
+			  <li>Laravel</li>
+			  <li>Codeigniter</li>
+			  <li>Ruby on Rails</li>
+			  <li>Phoenix (Elixir)</li>
+			  <li>RESTful APIs</li>
+			  <li>GraphQL</li>
+			</ul>
+		  </section>
+		  <section class="bg-[#5D667459] p-16 pb-48 border text-white
+						  border-neutral-400 rounded-2xl">
+			<h3 class="font-semibold text-2xl">
+			  Front-End Development
+			</h3>
+			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
+			  <li>HTML</li>
+			  <li>SASS/CSS</li>
+			  <li>Javascript/Typescript</li>
+			  <li>React.js</li>
+			  <li>Vue.js</li>
+			  <li>Kotlin</li>
+			  <li>Flutter</li>
+			</ul>
+		  </section>
+		  <section class="bg-[#5D667459] p-16 pb-48 border
+						  text-white rounded-2xl border-neutral-400">
+			<h3 class="font-semibold text-2xl">DevOps</h3>
+			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
+			  <li>Python</li>
+			  <li>Ruby</li>
+			  <li>Bash</li>
+			  <li>Docker</li>
+			  <li>Ubuntu/Debian</li>
+			  <li>Fedora/Alma Linux</li>
+			  <li>MySQL, PostgreSQL, SQLite</li>
+			  <li>Git</li>
+			</ul>
+		  </section>
+		</div>
+	  </section>
+	  <section id="services"
+			   class="py-24 md:py-48">
+		<div class="flex flex-row w-full gap-x-4 px-8 gap-y-8 mx-auto
+					justify-start max-w-[1200px] scroll-smooth snap-x
+					snap-mandatory overflow-y-auto sm:gap-x-8 sm:flex-wrap
+					sm:px-0 sm:justify-center sm:overflow-y-visible"
+			 style="scrollbar-width: 0px;
+					scrollbar-color: transparent transparent;">
+		  <div class="min-w-[280px] flex flex-col gap-y-4 w-screen snap-center
+					  justify-center text-white md:max-w-[360px]">
+			<h2 class="text-4xl font-medium font-josefin">
+			  My Expertise and Services
+			</h2>
+			<p class="text-xl text-justify">
+			  Offering a range of development services, with a focus on
+			  delivering high-quality and efficient solutions tailored
+			  to meet the specific needs of each project.
+			</p>
+		  </div>
+		  <div class="services-card">
+			<img src="/img/web_development.png"
+				 width="120px"
+				 height="120px"
+				 class="w-[120px] h-[120px]">
+			<h3 class="text-2xl font-medium mt-4">
+			  Web Development
+			</h3>
+			<div class="h-px bg-white mt-2 mb-3"></div>
+			<ul class="text-base">
+			  <li>Custom Website Design</li>
+			  <li>Responsive Web Design</li>
+			  <li>E-Commerce Solutions</li>
+			</ul>
+		  </div>
+		  <div class="services-card">
+			<img src="/img/fullstack_development.png"
+				 width="120px"
+				 height="120px"
+				 class="w-[120px] h-[120px]">
+			<h3 class="text-2xl font-medium mt-4">
+			  Full-Stack Development
+			</h3>
+			<div class="h-px bg-white mt-2 mb-3"></div>
+			<ul class="text-base">
+			  <li>End-to-End Development</li>
+			  <li>Full-Stack Application Architecture</li>
+			  <li>Maintenance and Support</li>
+			</ul>
+		  </div>
+		  <div class="services-card">
+			<img src="/img/backend_development.png"
+				 width="120px"
+				 height="120px"
+				 class="w-[120px] h-[120px]">
+			<h3 class="text-2xl font-medium mt-4">
+			  Backend Development
+			</h3>
+			<div class="h-px bg-white mt-2 mb-3"></div>
+			<ul class="text-base">
+			  <li>API Development and Integration</li>
+			  <li>Database Design and Management</li>
+			  <li>Server-Side Scripting</li>
+			</ul>
+		  </div>
+		  <div class="services-card">
+			<img src="/img/frontend_development.png"
+				 width="120px"
+				 height="120px"
+				 class="w-[120px] h-[120px]">
+			<h3 class="text-2xl font-medium mt-4">
+			  Frontend Development
+			</h3>
+			<div class="h-px bg-white mt-2 mb-3"></div>
+			<ul class="text-base">
+			  <li>User Interface (UI) Design</li>
+			  <li>User Experience (UX) Optimization</li>
+			  <li>Single Page Application (SPA) Development</li>
+			</ul>
+		  </div>
+		  <div class="services-card">
+			<img src="/img/additional_services.png"
+				 width="120px"
+				 height="120px"
+				 class="w-[120px] h-[120px]">
+			<h3 class="text-2xl font-medium mt-4">
+			  Additional Services
+			</h3>
+			<div class="h-px bg-white mt-2 mb-3"></div>
+			<ul class="text-base">
+			  <li>Website Maintenance and Updates</li>
+			  <li>Performance Optimization</li>
+			  <li>Technical Consulting</li>
+			</ul>
+		  </div>
+		</div>
+	  </section>
+	  <section id="projects" class="py-24 container mx-auto md:py-48">
+		<h2 class="text-center text-4xl text-white font-medium font-josefin">
+		  My Recent Works
+		</h2>
+		<div class="flex flex-col gap-y-8 mt-16">
+		  <div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
+			<div class="flex flex-col">
+			  <h3 class="text-white text-2xl font-medium">
+				Full-Stack Web Application
+			  </h3>
+			  <div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
+			  <div class="flex flex-col justify-between
+						  gap-y-16 lg:flex-row">
+				<div class="flex flex-col lg:w-1/3">
+				  <div class="bg-slate-900 text-slate-600
+							  rounded-lg flex
+							  flex-col justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg"
+						 fill="none"
+						 viewBox="0 0 24 24"
+						 stroke-width="1.5"
+						 stroke="currentColor"
+						 class="size-36 m-auto">
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+					</svg>
+				  </div>
+				  <div class="flex flex-row flex-nowrap gap-x-2
+							  text-white items-center mt-8">
+					<div class="rounded-full border border-white p-1">
+					  <svg xmlns="http://www.w3.org/2000/svg"
+						   fill="none"
+						   viewBox="0 0 24 24"
+						   stroke-width="1.5"
+						   stroke="currentColor"
+						   class="size-6">
+						<path stroke-linecap="round"
+							  stroke-linejoin="round"
+							  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+					  </svg>
+					</div>
+					Visit Project
+				  </div>
 				</div>
-			</section>
-			<section id="services"
-					 class="bg-[url('/img/services.png')] bg-no-repeat
-						 bg-cover saturate-50 py-24 md:py-48">
-				<h2 class="text-4xl font-medium text-center
-						   text-white">
-					My Expertise and Services
-				</h2>
-				<div class="mt-16 flex flex-row flex-nowrap w-full gap-x-4
-							gap-y-8 mx-auto justify-start max-w-[1200px] px-10
-							overflow-y-auto scroll-smooth snap-x snap-mandatory
-							sm:justify-center sm:overflow-y-visible sm:px-0
-							sm:flex-wrap sm:gap-x-8"
-					 style="scrollbar-width: 0px;
-							scrollbar-color: transparent transparent;">
-					<div class="bg-[#FFFFFF1A] rounded-2xl p-8 pb-24
-								border border-[#D58E7280] text-white w-1/3
-								min-w-[280px] max-w-[360px] backdrop-blur-xl
-								snap-center">
-						<img src="/img/web_development.svg"
-							 width="120px"
-							 height="120px"
-							 class="mx-auto w-[120px] h-[120px]">
-						<h3 class="text-2xl font-medium mt-8 mb-4">
-							Web Development
-						</h3>
-						<ul class="text-base">
-							<li>Custom Website Design</li>
-							<li>Responsive Web Design</li>
-							<li>E-Commerce Solutions</li>
-						</ul>
-					</div>
-					<div class="bg-[#FFFFFF1A] rounded-2xl p-8 pb-24
-								border border-[#D58E7280] text-white w-1/3
-								min-w-[280px] max-w-[360px] backdrop-blur-xl
-								snap-center">
-						<img src="/img/backend_development.svg"
-							 width="120px"
-							 height="120px"
-							 class="mx-auto w-[120px] h-[120px]">
-						<h3 class="text-2xl font-medium mt-8 mb-4">
-							Backend Development
-						</h3>
-						<ul class="text-base">
-							<li>API Development and Integration</li>
-							<li>Database Design and Management</li>
-							<li>Server-Side Scripting</li>
-						</ul>
-					</div>
-					<div class="bg-[#FFFFFF1A] rounded-2xl p-8 pb-24
-								border border-[#D58E7280] text-white w-1/3
-								min-w-[280px] max-w-[360px] backdrop-blur-xl
-								snap-center">
-						<img src="/img/frontend_development.svg"
-							 width="120px"
-							 height="120px"
-							 class="mx-auto w-[120px] h-[120px]">
-						<h3 class="text-2xl font-medium mt-8 mb-4">
-							Frontend Development
-						</h3>
-						<ul class="text-base">
-							<li>User Interface (UI) Design</li>
-							<li>User Experience (UX) Optimization</li>
-							<li>Single Page Application (SPA) Development</li>
-						</ul>
-					</div>
-					<div class="bg-[#FFFFFF1A] rounded-2xl p-8 pb-24
-								border border-[#D58E7280] text-white w-1/3
-								min-w-[280px] max-w-[360px] backdrop-blur-xl
-								snap-center">
-						<img src="/img/fullstack_development.svg"
-							 width="120px"
-							 height="120px"
-							 class="mx-auto w-[120px] h-[120px]">
-						<h3 class="text-2xl font-medium mt-8 mb-4">
-							Full-Stack Development
-						</h3>
-						<ul class="text-base">
-							<li>End-to-End Development</li>
-							<li>Full-Stack Application Architecture</li>
-							<li>Maintenance and Support</li>
-						</ul>
-					</div>
-					<div class="bg-[#FFFFFF1A] rounded-2xl p-8 pb-24
-								border border-[#D58E7280] text-white w-1/3
-								min-w-[280px] max-w-[360px] backdrop-blur-xl
-								snap-center">
-						<img src="/img/additional_services.svg"
-							 width="120px"
-							 height="120px"
-							 class="mx-auto w-[120px] h-[120px]">
-						<h3 class="text-2xl font-medium mt-8 mb-4">
-							Additional Services
-						</h3>
-						<ul class="text-base">
-							<li>Website Maintenance and Updates</li>
-							<li>Performance Optimization</li>
-							<li>Technical Consulting</li>
-						</ul>
-					</div>
-					<div class="bg-[#FFFFFF1A] rounded-2xl p-8 pb-24
-								border border-[#D58E7280] text-white w-1/3
-								min-w-[280px] max-w-[360px] backdrop-blur-xl
-								snap-center">
-						<img src="/img/technologies_tools.svg"
-							 width="120px"
-							 height="120px"
-							 class="mx-auto w-[120px] h-[120px]">
-						<h3 class="text-2xl font-medium mt-8 mb-4">
-							Technologies and Tools
-						</h3>
-						<ul class="text-base">
-							<li>Website Maintenance and Updates</li>
-							<li>Performance Optimization</li>
-							<li>Technical Consulting</li>
-						</ul>
-					</div>
+				<div class="w-full lg:w-2/5">
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium">
+					Description
+				  </h4>
+				  <p class="text-white">
+					Developed a comprehensive e-commerce
+					platform with user authentication,
+					product listings, shopping cart, and
+					secure payment integration.
+				  </p>
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium mt-8">
+					Technologies
+				  </h4>
+				  <p class="text-white">
+					Front-End: Vue.js; Back-End: Ruby on
+					Rails; Database: PostgreSQL;
+					APIs: RESTful APIs
+				  </p>
 				</div>
-			</section>
-			<section id="projects" class="py-24 container mx-auto md:py-48">
-				<h2 class="text-center text-4xl text-white font-medium">
-					Recent Works
-				</h2>
-				<div class="flex flex-col gap-y-8 mt-16">
-					<div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
-						<div class="flex flex-col">
-							<h3 class="text-white text-2xl font-medium">
-								Full-Stack Web Application
-							</h3>
-							<div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
-							<div class="flex flex-col justify-between
-										gap-y-16 lg:flex-row">
-								<div class="flex flex-col lg:w-1/3">
-									<div class="bg-slate-900 text-slate-600
-												 rounded-lg flex
-												flex-col justify-center">
-										<svg xmlns="http://www.w3.org/2000/svg"
-											 fill="none"
-											 viewBox="0 0 24 24"
-											 stroke-width="1.5"
-											 stroke="currentColor"
-											 class="size-36 m-auto">
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-										</svg>
-									</div>
-									<div class="flex flex-row flex-nowrap gap-x-2
-												text-white items-center mt-8">
-										<div class="rounded-full border border-white p-1">
-											<svg xmlns="http://www.w3.org/2000/svg"
-												 fill="none"
-												 viewBox="0 0 24 24"
-												 stroke-width="1.5"
-												 stroke="currentColor"
-												 class="size-6">
-												<path stroke-linecap="round"
-													  stroke-linejoin="round"
-													  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-											</svg>
-										</div>
-										Visit Project
-									</div>
-								</div>
-								<div class="w-full lg:w-2/5">
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium">
-										Description
-									</h4>
-									<p class="text-white">
-										Developed a comprehensive e-commerce
-										platform with user authentication,
-										product listings, shopping cart, and
-										secure payment integration.
-									</p>
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium mt-8">
-										Technologies
-									</h4>
-									<p class="text-white">
-										Front-End: Vue.js; Back-End: Ruby on
-										Rails; Database: PostgreSQL;
-										APIs: RESTful APIs
-									</p>
-								</div>
-							</div>
-						</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
+			<div class="flex flex-col">
+			  <h3 class="text-white text-2xl font-medium">
+				Open Source Contribution
+			  </h3>
+			  <div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
+			  <div class="flex flex-col justify-between
+						  gap-y-16 lg:flex-row">
+				<div class="flex flex-col lg:w-1/3">
+				  <div class="bg-slate-900 text-slate-600
+							  rounded-lg flex flex-col
+							  justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg"
+						 fill="none"
+						 viewBox="0 0 24 24"
+						 stroke-width="1.5"
+						 stroke="currentColor"
+						 class="size-36 m-auto">
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+					</svg>
+				  </div>
+				  <div class="flex flex-row flex-nowrap gap-x-2
+							  text-white items-center mt-8">
+					<div class="rounded-full border border-white p-1">
+					  <svg xmlns="http://www.w3.org/2000/svg"
+						   fill="none"
+						   viewBox="0 0 24 24"
+						   stroke-width="1.5"
+						   stroke="currentColor"
+						   class="size-6">
+						<path stroke-linecap="round"
+							  stroke-linejoin="round"
+							  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+					  </svg>
 					</div>
-					<div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
-						<div class="flex flex-col">
-							<h3 class="text-white text-2xl font-medium">
-								Open Source Contribution
-							</h3>
-							<div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
-							<div class="flex flex-col justify-between
-										gap-y-16 lg:flex-row">
-								<div class="flex flex-col lg:w-1/3">
-									<div class="bg-slate-900 text-slate-600
-												rounded-lg flex flex-col
-												justify-center">
-										<svg xmlns="http://www.w3.org/2000/svg"
-											 fill="none"
-											 viewBox="0 0 24 24"
-											 stroke-width="1.5"
-											 stroke="currentColor"
-											 class="size-36 m-auto">
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-										</svg>
-									</div>
-									<div class="flex flex-row flex-nowrap gap-x-2
-												text-white items-center mt-8">
-										<div class="rounded-full border border-white p-1">
-											<svg xmlns="http://www.w3.org/2000/svg"
-												 fill="none"
-												 viewBox="0 0 24 24"
-												 stroke-width="1.5"
-												 stroke="currentColor"
-												 class="size-6">
-												<path stroke-linecap="round"
-													  stroke-linejoin="round"
-													  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-											</svg>
-										</div>
-										Visit Project
-									</div>
-								</div>
-								<div class="w-full lg:w-2/5">
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium">
-										Description
-									</h4>
-									<p class="text-white">
-										Contributed to a popular open-source
-										library by adding features, improving
-										documentation, and optimizing
-										performance.
-									</p>
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium mt-8">
-										Technologies
-									</h4>
-									<p class="text-white">
-										Development: Ruby on Rails, Git;
-										Collaboration: GitHub
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
-						<div class="flex flex-col">
-							<h3 class="text-white text-2xl font-medium">
-								Mobile Application
-							</h3>
-							<div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
-							<div class="flex flex-col justify-between
-										gap-y-16 lg:flex-row">
-								<div class="flex flex-col lg:w-1/3">
-									<div class="bg-slate-900 text-slate-600
-												rounded-lg flex flex-col
-												justify-center">
-										<svg xmlns="http://www.w3.org/2000/svg"
-											 fill="none"
-											 viewBox="0 0 24 24"
-											 stroke-width="1.5"
-											 stroke="currentColor"
-											 class="size-36 m-auto">
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-										</svg>
-									</div>
-									<div class="flex flex-row flex-nowrap gap-x-2
-												text-white items-center mt-8">
-										<div class="rounded-full border border-white p-1">
-											<svg xmlns="http://www.w3.org/2000/svg"
-												 fill="none"
-												 viewBox="0 0 24 24"
-												 stroke-width="1.5"
-												 stroke="currentColor"
-												 class="size-6">
-												<path stroke-linecap="round"
-													  stroke-linejoin="round"
-													  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-											</svg>
-										</div>
-										Visit Project
-									</div>
-								</div>
-								<div class="w-full lg:w-2/5">
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium">
-										Description
-									</h4>
-									<p class="text-white">
-										Created a cross-platform app for task
-										management with features like task
-										creation, prioritization, reminders,
-										and notifications
-									</p>
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium mt-8">
-										Technologies
-									</h4>
-									<p class="text-white">
-										Mobile Development: Flutter, Android Jetpack
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
-						<div class="flex flex-col">
-							<h3 class="text-white text-2xl font-medium">
-								UI/UX Design
-							</h3>
-							<div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
-							<div class="flex flex-col justify-between
-										gap-y-16 lg:flex-row">
-								<div class="flex flex-col lg:w-1/3">
-									<div class="bg-slate-900 text-slate-600
-												rounded-lg flex flex-col
-												justify-center">
-										<svg xmlns="http://www.w3.org/2000/svg"
-											 fill="none"
-											 viewBox="0 0 24 24"
-											 stroke-width="1.5"
-											 stroke="currentColor"
-											 class="size-36 m-auto">
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-											<path stroke-linecap="round"
-												  stroke-linejoin="round"
-												  d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-										</svg>
-									</div>
-									<div class="flex flex-row flex-nowrap gap-x-2
-												text-white items-center mt-8">
-										<div class="rounded-full border border-white p-1">
-											<svg xmlns="http://www.w3.org/2000/svg"
-												 fill="none"
-												 viewBox="0 0 24 24"
-												 stroke-width="1.5"
-												 stroke="currentColor"
-												 class="size-6">
-												<path stroke-linecap="round"
-													  stroke-linejoin="round"
-													  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-											</svg>
-										</div>
-										Visit Project
-									</div>
-								</div>
-								<div class="w-full lg:w-2/5">
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium">
-										Description
-									</h4>
-									<p class="text-white">
-										Led the redesign of a popular website
-										for improved user experience and visual
-										appeal, resulting in a modern,
-										responsive layout.
-									</p>
-									<h4 class="text-[#D58E72] text-lg
-											   font-medium mt-8">
-										Technologies
-									</h4>
-									<p class="text-white">
-										Front-End: HTML, CSS/SCSS,
-										JavaScript/Typescript;
-										Design Tools: Figma, Inkscape
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					Visit Project
+				  </div>
 				</div>
-			</section>
-			<section id="blog" class="container mx-auto py-24 md:py-48">
-				<h2 class="text-white text-4xl font-medium text-center">
-					Read My Blog
-				</h2>
-				<div class="flex flex-col gap-x-16 gap-y-36 mt-16
-							items-center lg:items-stretch lg:flex-row">
-					<article class="w-4/5 lg:w-1/3">
-						<div class="h-[70vh] w-full overflow-hidden
-									rounded-xl border">
-							<img src="/img/blog_1.svg"
-								 class="min-w-full min-h-full object-cover">
-						</div>
-						<p class="text-[#D9D9D9] font-thin font-mono my-4">
-							December 2024 - 20 mins read
-						</p>
-						<h3 class="text-white text-2xl font-medium">
-							Full-Stack Development Best Practices
-						</h3>
-					</article>
-					<article class="w-4/5 lg:w-1/3">
-						<div class="h-[70vh] w-full overflow-hidden
-									rounded-xl border">
-							<img src="/img/blog_2.png"
-								 class="min-w-full min-h-full object-cover">
-						</div>
-						<p class="text-[#D9D9D9] font-thin font-mono my-4">
-							December 2024 - 20 mins read
-						</p>
-						<h3 class="text-white text-2xl font-medium">
-							User-Centric Design: Lessons from Real Projects
-						</h3>
-					</article>
-					<article class="w-4/5 lg:w-1/3">
-						<div class="h-[70vh] w-full overflow-hidden
-									rounded-xl border">
-							<img src="/img/blog_3.png"
-								 class="min-w-full min-h-full overflow-hidden">
-						</div>
-						<p class="text-[#D9D9D9] font-thin font-mono my-4">
-							December 2024 - 20 mins read
-						</p>
-						<h3 class="text-white text-2xl font-medium">
-							Continuous Integration and
-							Deployment: A Practice Guide
-						</h3>
-					</article>
+				<div class="w-full lg:w-2/5">
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium">
+					Description
+				  </h4>
+				  <p class="text-white">
+					Contributed to a popular open-source
+					library by adding features, improving
+					documentation, and optimizing
+					performance.
+				  </p>
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium mt-8">
+					Technologies
+				  </h4>
+				  <p class="text-white">
+					Development: Ruby on Rails, Git;
+					Collaboration: GitHub
+				  </p>
 				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
+			<div class="flex flex-col">
+			  <h3 class="text-white text-2xl font-medium">
+				Mobile Application
+			  </h3>
+			  <div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
+			  <div class="flex flex-col justify-between
+						  gap-y-16 lg:flex-row">
+				<div class="flex flex-col lg:w-1/3">
+				  <div class="bg-slate-900 text-slate-600
+							  rounded-lg flex flex-col
+							  justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg"
+						 fill="none"
+						 viewBox="0 0 24 24"
+						 stroke-width="1.5"
+						 stroke="currentColor"
+						 class="size-36 m-auto">
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+					</svg>
+				  </div>
+				  <div class="flex flex-row flex-nowrap gap-x-2
+							  text-white items-center mt-8">
+					<div class="rounded-full border border-white p-1">
+					  <svg xmlns="http://www.w3.org/2000/svg"
+						   fill="none"
+						   viewBox="0 0 24 24"
+						   stroke-width="1.5"
+						   stroke="currentColor"
+						   class="size-6">
+						<path stroke-linecap="round"
+							  stroke-linejoin="round"
+							  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+					  </svg>
+					</div>
+					Visit Project
+				  </div>
+				</div>
+				<div class="w-full lg:w-2/5">
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium">
+					Description
+				  </h4>
+				  <p class="text-white">
+					Created a cross-platform app for task
+					management with features like task
+					creation, prioritization, reminders,
+					and notifications
+				  </p>
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium mt-8">
+					Technologies
+				  </h4>
+				  <p class="text-white">
+					Mobile Development: Flutter, Android Jetpack
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="bg-[#5D667459] px-4 md:px-24 py-8 rounded-xl">
+			<div class="flex flex-col">
+			  <h3 class="text-white text-2xl font-medium">
+				UI/UX Design
+			  </h3>
+			  <div class="h-px bg-[#5D6674] mt-4 mb-8"></div>
+			  <div class="flex flex-col justify-between
+						  gap-y-16 lg:flex-row">
+				<div class="flex flex-col lg:w-1/3">
+				  <div class="bg-slate-900 text-slate-600
+							  rounded-lg flex flex-col
+							  justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg"
+						 fill="none"
+						 viewBox="0 0 24 24"
+						 stroke-width="1.5"
+						 stroke="currentColor"
+						 class="size-36 m-auto">
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+					  <path stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+					</svg>
+				  </div>
+				  <div class="flex flex-row flex-nowrap gap-x-2
+							  text-white items-center mt-8">
+					<div class="rounded-full border border-white p-1">
+					  <svg xmlns="http://www.w3.org/2000/svg"
+						   fill="none"
+						   viewBox="0 0 24 24"
+						   stroke-width="1.5"
+						   stroke="currentColor"
+						   class="size-6">
+						<path stroke-linecap="round"
+							  stroke-linejoin="round"
+							  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+					  </svg>
+					</div>
+					Visit Project
+				  </div>
+				</div>
+				<div class="w-full lg:w-2/5">
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium">
+					Description
+				  </h4>
+				  <p class="text-white">
+					Led the redesign of a popular website
+					for improved user experience and visual
+					appeal, resulting in a modern,
+					responsive layout.
+				  </p>
+				  <h4 class="text-[#D58E72] text-lg
+							 font-medium mt-8">
+					Technologies
+				  </h4>
+				  <p class="text-white">
+					Front-End: HTML, CSS/SCSS,
+					JavaScript/Typescript;
+					Design Tools: Figma, Inkscape
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <section id="blog" class="container mx-auto py-24 md:py-48">
+		<h2 class="text-white text-4xl font-medium text-center">
+		  Read My Blog
+		</h2>
+		<div class="flex flex-col gap-x-16 gap-y-36 mt-16
+					items-center lg:items-stretch lg:flex-row">
+		  <article class="w-4/5 lg:w-1/3">
+			<div class="h-[70vh] w-full overflow-hidden
+						rounded-xl border">
+			  <img src="/img/blog_1.svg"
+				   class="min-w-full min-h-full object-cover">
+			</div>
+			<p class="text-[#D9D9D9] font-thin font-mono my-4">
+			  December 2024 - 20 mins read
+			</p>
+			<h3 class="text-white text-2xl font-medium">
+			  Full-Stack Development Best Practices
+			</h3>
+		  </article>
+		  <article class="w-4/5 lg:w-1/3">
+			<div class="h-[70vh] w-full overflow-hidden
+						rounded-xl border">
+			  <img src="/img/blog_2.png"
+				   class="min-w-full min-h-full object-cover">
+			</div>
+			<p class="text-[#D9D9D9] font-thin font-mono my-4">
+			  December 2024 - 20 mins read
+			</p>
+			<h3 class="text-white text-2xl font-medium">
+			  User-Centric Design: Lessons from Real Projects
+			</h3>
+		  </article>
+		  <article class="w-4/5 lg:w-1/3">
+			<div class="h-[70vh] w-full overflow-hidden
+						rounded-xl border">
+			  <img src="/img/blog_3.png"
+				   class="min-w-full min-h-full overflow-hidden">
+			</div>
+			<p class="text-[#D9D9D9] font-thin font-mono my-4">
+			  December 2024 - 20 mins read
+			</p>
+			<h3 class="text-white text-2xl font-medium">
+			  Continuous Integration and
+			  Deployment: A Practice Guide
+			</h3>
+		  </article>
+		</div>
 
-				<div class="mt-24 underline text-white
-							decoration-white text-center">
-					Read more blogs
+		<div class="mt-24 underline text-white
+					decoration-white text-center">
+		  Read more blogs
+		</div>
+	  </section>
+	  <section id="contact" class="py-24 container mx-auto md:py-48">
+		<h2 class="text-4xl font-medium text-white text-center">
+		  Ready to Transform Your Ideas Into Reality?
+		</h2>
+		<div class="bg-[#5D667459] rounded-xl w-1/2
+					mt-16 ms-auto py-8 px-12">
+		  <h3 class="text-2xl mb-8 text-white">Send Me a Message</h3>
+		  <form>
+			<div class="flex flex-row gap-x-4">
+			  <div class="w-1/2">
+				<div>
+				  <label class="text-white" for="name">
+					Name
+				  </label>
 				</div>
-			</section>
-			<section id="contact" class="py-24 container mx-auto md:py-48">
-				<h2 class="text-4xl font-medium text-white text-center">
-					Ready to Transform Your Ideas Into Reality?
-				</h2>
-				<div class="bg-[#5D667459] rounded-xl w-1/2
-							mt-16 ms-auto py-8 px-12">
-					<h3 class="text-2xl mb-8 text-white">Send Me a Message</h3>
-					<form>
-						<div class="flex flex-row gap-x-4">
-							<div class="w-1/2">
-								<div>
-									<label class="text-white" for="name">
-										Name
-									</label>
-								</div>
-								<input class="bg-transparent
-											  text-white border-b w-full"
-									   type="text"
-									   name="name"
-									   id="name">
-							</div>
-							<div class="w-1/2">
-								<div>
-									<label class="text-white" for="email">
-										Email
-									</label>
-								</div>
-								<input class="text-white bg-transparent
-											  border-b w-full"
-									   type="email"
-									   name="email"
-									   id="email">
-							</div>
-						</div>
-						<div class="py-8">
-							<div>
-								<label class="text-white" for="message">
-									Message
-								</label>
-							</div>
-							<textarea class="w-full rounded-md"
-									  name="message"
-									  rows="5"
-									  id="message"></textarea>
-						</div>
-						<div>
-							<div>
-								<label class="text-white" for="attachment">
-									Attached File
-								</label>
-							</div>
-							<input type="file"
-								   name="attachment"
-								   id="attachment">
-						</div>
+				<input class="bg-transparent
+							  text-white border-b w-full"
+					   type="text"
+					   name="name"
+					   id="name">
+			  </div>
+			  <div class="w-1/2">
+				<div>
+				  <label class="text-white" for="email">
+					Email
+				  </label>
+				</div>
+				<input class="text-white bg-transparent
+							  border-b w-full"
+					   type="email"
+					   name="email"
+					   id="email">
+			  </div>
+			</div>
+			<div class="py-8">
+			  <div>
+				<label class="text-white" for="message">
+				  Message
+				</label>
+			  </div>
+			  <textarea class="w-full rounded-md"
+						name="message"
+						rows="5"
+						id="message"></textarea>
+			</div>
+			<div>
+			  <div>
+				<label class="text-white" for="attachment">
+				  Attached File
+				</label>
+			  </div>
+			  <input type="file"
+					 name="attachment"
+					 id="attachment">
+			</div>
 
-					</form>
-				</div>
-			</section>
-		</main>
-	</body>
+		  </form>
+		</div>
+	  </section>
+	</main>
+  </body>
 </html>
