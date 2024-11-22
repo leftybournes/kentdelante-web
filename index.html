@@ -219,7 +219,7 @@
 		</div>
 	  </section>
 	  <section id="skills"
-			   class="py-16 flex flex-col justify-center lg:h-screen lg:py-0">
+			   class="py-16 flex flex-col justify-center lg:h-[80vh] lg:py-0">
 		<div class="container mx-auto">
 		  <h2 class="text-center text-4xl text-white font-medium font-josefin">
 			Development Skills
@@ -227,10 +227,10 @@
 		</div>
 
 		<div class="flex flex-col gap-4 mx-auto sm:flex-row mt-16
-					justify-center container lg:flex-nowrap">
-		  <section class="border rounded-2xl p-16
-						  pb-48 bg-[#5D667459] text-white
-						  border-neutral-400">
+                    container justify-center lg:flex-nowrap
+                    [&:hover>:not(:hover)]:scale-95">
+		  <section class="bg-[#5D667459] border rounded-2xl p-16 transition
+                          text-white border-neutral-400 hover:scale-105">
 			<h3 class="font-semibold text-2xl">
 			  Full-Stack Development
 			</h3>
@@ -244,8 +244,8 @@
 			  <li>GraphQL</li>
 			</ul>
 		  </section>
-		  <section class="bg-[#5D667459] p-16 pb-48 border text-white
-						  border-neutral-400 rounded-2xl">
+		  <section class="bg-[#5D667459] border rounded-2xl p-16 transition
+                          text-white border-neutral-400 hover:scale-105">
 			<h3 class="font-semibold text-2xl">
 			  Front-End Development
 			</h3>
@@ -259,8 +259,8 @@
 			  <li>Flutter</li>
 			</ul>
 		  </section>
-		  <section class="bg-[#5D667459] p-16 pb-48 border
-						  text-white rounded-2xl border-neutral-400">
+		  <section class="bg-[#5D667459] border rounded-2xl p-16 transition
+                          text-white border-neutral-400 hover:scale-105">
 			<h3 class="font-semibold text-2xl">DevOps</h3>
 			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
 			  <li>Python</li>
