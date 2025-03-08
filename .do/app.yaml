@@ -1,0 +1,8 @@
+name: kentdelante-web
+static_sites:
+    - environment_slug: html
+      github:
+        branch: main
+        deploy_on_push: true
+        repo: leftybournes/kentdelante-web
+      name: kentdelante-web
