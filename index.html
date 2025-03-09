@@ -1,73 +1,64 @@
 <!DOCTYPE html>
 
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="favicon" href="/img/logo.svg" type="image/svg+xml" sizes="any">
-	<link rel="stylesheet" type="text/css" href="/src/style.css">
+	<link rel="favicon" href="img/logo.svg" type="image/svg+xml" sizes="any">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kent D. Delante</title>
   </head>
-  <body class="antialiased bg-gradient-to-r from-[#25283E] to-[#475161]">
-	<header class="pt-8" id="home">
-	  <div class="container mx-auto flex flex-row flex-nowrap px-4
-				  w-full justify-between items-center lg:px-0">
+  <body>
+	<header class="header">
+	  <div class="header__container">
 		<section>
-		  <a class="flex flex-row flex-nowrap items-center" href="/">
-			<img class="w-[40px]" src="/img/logo.svg">
-			<h1 class="text-[22px] sm:text-[26px] text-[#ffffff]
-					   ms-2 font-bold">
-			  <span class="hidden lg:inline">
+		  <a class="header__branding" href="/">
+			<img class="header__logo" src="img/logo.svg">
+			<h1 class="header__brand">
+			  <span class="header__initials">
 				KD
 			  </span>
-			  <span class="lg:hidden">
+			  <span class="header__name">
 				Kent D. Delante
 			  </span>
 			</h1>
 		  </a>
 		</section>
-		<section class="lg:flex">
+		<section class="header__navigation">
 		  <label for="nav-toggle"
-				 class="block text-white lg:hidden border-2
-					  rounded-full p-2 cursor-pointer">
+				 class="header__togglebutton">
 			<svg xmlns="http://www.w3.org/2000/svg"
 				 fill="none"
 				 viewBox="0 0 24 24"
 				 stroke-width="1.5"
 				 stroke="currentColor"
-				 class="size-6">
+				 class="header__bars">
 			  <path stroke-linecap="round"
 					stroke-linejoin="round"
 					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 			</svg>
 		  </label>
-		  <input type="checkbox" id="nav-toggle" class="peer hidden">
-		  <nav class="absolute w-screen h-[88vh] top-0 -mt-[100vh]
-					  z-50 ps-14 lg:my-auto left-0
-					  peer-checked:mt-[78px] bg-[#475161ef] lg:mt-0
-					  lg:w-auto lg:h-auto lg:static lg:bg-transparent
-					  lg:z-0">
-			<ul class="flex flex-col gap-x-12 text-[#ffffff] content-center
-                       text-3xl gap-y-8 mt-8 font-semibold font-josefin
-                       lg:flex-row lg:mt-0 lg:flex-nowrap lg:text-2xl">
+		  <input type="checkbox" id="nav-toggle" class="header__toggle">
+		  <nav class="header__nav">
+			<ul class="header__navlist">
 			  <li>
-                <a class="hover:text-[#D0886B]" href="/">Home</a>
+                <a class="header__navlink" href="/">Home</a>
               </li>
 			  <li>
-                <a class="hover:text-[#D0886B]" href="#about">About me</a>
+                <a class="header__navlink" href="#about">About me</a>
               </li>
 			  <li>
-                <a class="hover:text-[#D0886B]" href="#services">Services</a>
+                <a class="header__navlink" href="#services">Services</a>
               </li>
 			  <li>
-                <a class="hover:text-[#D0886B]" href="#projects">Projects</a>
+                <a class="header__navlink" href="#projects">Projects</a>
               </li>
 			  <li>
-                <a class="hover:text-[#D0886B]" href="#blog">Blog</a>
+                <a class="header__navlink" href="#blog">Blog</a>
               </li>
 			  <li>
-                <a class="hover:text-[#D0886B]" href="#contact">Contact me</a>
+                <a class="header__navlink" href="#contact">Contact me</a>
               </li>
 			</ul>
 		  </nav>
