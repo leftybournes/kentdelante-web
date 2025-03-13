@@ -182,75 +182,72 @@
 		  </div>
 	  </section>
 	  <section id="skills"
-			   class="max-w-[1144px] mx-auto py-64 flex flex-col justify-center lg:h-screen lg:py-0">
-		<div class="px-8 sm:px-0">
-		  <h2 class="text-4xl text-white font-medium font-josefin lg:text-4xl">
+			   class="skills">
+        <div class="skills__container">
+		  <h2 class="skills__heading">
 			Development Skills
 		  </h2>
-          <p class="text-white text-xl mt-4 hidden md:block">
+          <p class="skills__intro">
             Bringing innovative and efficient development solutions that
             bridge creativity and functionality, tailored to meet the
             unique needs of every project
           </p>
-		</div>
 
-		<div class="flex flex-col gap-4 mt-16 justify-between px-8
-                    sm:flex-row gap-y-16 sm:px-0 lg:flex-nowrap
-                    lg:[&:hover>:not(:hover)]:scale-95">
-		  <section class="bg-[#5D667459] border border-[#D58E72] rounded-2xl
-                          p-16 transition text-white border-neutral-400
-                          relative hover:scale-105">
-            <img class="absolute inset-0 -top-12 left-2/3"
-                 src="/img/rocket.png">
-			<h3 class="font-semibold text-2xl">
-			  Full-Stack Development
-			</h3>
+		  <div class="skills__board sm:flex-row gap-y-16 sm:px-0 lg:flex-nowrap
+                      lg:[&:hover>:not(:hover)]:scale-95">
+		    <div class="skills__card">
+              <img class="skills__cardIcon"
+                   src="/img/rocket.png">
+			  <h3 class="skills__cardTitle">
+			    Full-Stack Development
+			  </h3>
 
-			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
-			  <li>Laravel</li>
-			  <li>Codeigniter</li>
-			  <li>Ruby on Rails</li>
-			  <li>Phoenix (Elixir)</li>
-			  <li>RESTful APIs</li>
-			  <li>GraphQL</li>
-			</ul>
-		  </section>
-		  <section class="bg-[#5D667459] border border-[#D58E72] rounded-2xl
-                          p-16 transition text-white border-neutral-400
-                          relative hover:scale-105">
-            <img class="absolute inset-0 -top-14 left-2/3"
-                 src="/img/paint_roller.png">
-			<h3 class="font-semibold text-2xl">
-			  Front-End Development
-			</h3>
-			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
-			  <li>HTML</li>
-			  <li>SASS/CSS</li>
-			  <li>Javascript/Typescript</li>
-			  <li>React.js</li>
-			  <li>Vue.js</li>
-			  <li>Kotlin</li>
-			  <li>Flutter</li>
-			</ul>
-		  </section>
-		  <section class="bg-[#5D667459] border border-[#D58E72] rounded-2xl
-                          p-16 transition text-white border-neutral-400
-                          relative hover:scale-105">
-            <img class="absolute inset-0 -top-12 left-2/3"
-                 src="/img/cloud_development.png">
-			<h3 class="font-semibold text-2xl">DevOps</h3>
-			<ul class="list-disc mt-4 ms-4 text-xl font-normal">
-			  <li>Python</li>
-			  <li>Ruby</li>
-			  <li>Bash</li>
-			  <li>Docker</li>
-			  <li>Ubuntu/Debian</li>
-			  <li>Fedora/Alma Linux</li>
-			  <li>MySQL, PostgreSQL, SQLite</li>
-			  <li>Git</li>
-			</ul>
-		  </section>
-		</div>
+			  <ul class="skills__list">
+			    <li>Laravel</li>
+			    <li>Codeigniter</li>
+			    <li>Ruby on Rails</li>
+			    <li>Phoenix (Elixir)</li>
+			    <li>RESTful APIs</li>
+			    <li>GraphQL</li>
+			  </ul>
+		    </div>
+		    <div class="skills__card bg-[#5D667459] border border-[#D58E72] rounded-2xl
+                            p-16 transition text-white border-neutral-400
+                            relative hover:scale-105">
+              <img class="skills__cardIcon absolute inset-0 -top-14 left-2/3"
+                   src="/img/paint_roller.png">
+			  <h3 class="skills__cardTitle">
+			    Front-End Development
+			  </h3>
+			  <ul class="skills__list">
+			    <li>HTML</li>
+			    <li>SASS/CSS</li>
+			    <li>Javascript/Typescript</li>
+			    <li>React.js</li>
+			    <li>Vue.js</li>
+			    <li>Kotlin</li>
+			    <li>Flutter</li>
+			  </ul>
+		    </div>
+		    <div class="skills__card bg-[#5D667459] border border-[#D58E72] rounded-2xl
+                            p-16 transition text-white border-neutral-400
+                            relative hover:scale-105">
+              <img class="skills__cardIcon"
+                   src="/img/cloud_development.png">
+			  <h3 class="skills__cardTitle">DevOps</h3>
+			  <ul class="skills__list">
+			    <li>Python</li>
+			    <li>Ruby</li>
+			    <li>Bash</li>
+			    <li>Docker</li>
+			    <li>Ubuntu/Debian</li>
+			    <li>Fedora/Alma Linux</li>
+			    <li>MySQL, PostgreSQL, SQLite</li>
+			    <li>Git</li>
+			  </ul>
+		    </div>
+		  </div>
+        </div>
 	  </section>
 	  <section id="services"
 			   class="py-0 lg:h-screen md:py-24">

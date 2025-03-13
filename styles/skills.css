@@ -1,0 +1,75 @@
+.skills {
+    .skills__container {
+        max-width: 1600px;
+        margin: 64px auto;
+        width: 90%;
+    }
+
+    .skills__heading {
+        font-size: 2.25rem;
+        font-weight: 600;
+        font-family: "Josefin Sans", sans-serif;
+        color: #fff;
+    }
+
+    .skills__intro {
+        color: #fff;
+        font-size: 1.25rem;
+        margin-top: 16px;
+    }
+
+    .skills__board {
+        margin-top: 64px;
+        display: flex;
+        flex-flow: column;
+        gap: 64px;
+        justify-content: center;
+    }
+
+    .skills__card {
+        background-color: #5d667459;
+        border: 1px solid rgb(163 163 163);
+        border-radius: 12px;
+        color: #fff;
+        position: relative;
+        transition: transform 200ms;
+        padding: 64px;
+    }
+
+    .skills__card:hover {
+        transform: scale(1.1);
+    }
+
+    .skills__cardIcon {
+        position: absolute;
+        top: -48px;
+        left: 66%;
+    }
+
+    .skills__cardTitle {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .skills__list {
+        margin-top: 16px;
+        margin-start: 16px;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills {
+        .skills__container {
+            width: 80%;
+        }
+
+        .skills__board {
+            flex-flow: row nowrap;
+        }
+
+        .skills__board:hover > *:not(:hover) {
+            transform: scale(0.95);
+        }
+    }
+}
