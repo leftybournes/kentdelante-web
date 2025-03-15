@@ -1,0 +1,98 @@
+.services {
+    .services__container {
+        max-width: 1600px;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .services__heading {
+        color: #fff;
+        font-size: 2.25rem;
+        font-weight: 600;
+        font-family: "Josefin Sans";
+    }
+
+    .services__description {
+        color: #fff;
+        font-size: 1.25rem;
+        margin-top: 16px;
+    }
+
+    .services__board {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        gap: 32px;
+        margin-top: 64px;
+        overflow-y: auto;
+        padding: 0px 32px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0px;
+        scrollbar-color: transparent transparent;
+    }
+
+    .services__card {
+        backdrop-filter: blur(64px);
+        background-color: #ffffff1a;
+        border-radius: 16px;
+        color: #fff;
+        border: 1px #d58e7280 solid;
+        min-width: 280px;
+        max-width: 300px;
+        width: 70%;
+        padding: 32px;
+        scroll-snap-align: center;
+    }
+
+    .services__cardIcon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .services__cardTitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 16px;
+    }
+
+    .services__cardDivider {
+        height: 1px;
+        background-color: #b0b0b0;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+
+    .services__cardList {
+        list-style-type: none;
+    }
+
+    .services__cardListItem:not(:first-child):not(:last-child) {
+        margin: 4px 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services {
+        .services__container {
+            width: 80%;
+        }
+
+        .services__board {
+            justify-content: center;
+            flex-flow: row wrap;
+            max-width: 1600px;
+            width: 80%;
+            overflow-y: visible;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services__spacer {
+            min-width: 280px;
+            max-width: 300px;
+            width: 66%;
+        }
+    }
+}
