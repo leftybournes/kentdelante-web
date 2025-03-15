@@ -39,7 +39,6 @@
         color: #fff;
         border: 1px #d58e7280 solid;
         min-width: 280px;
-        max-width: 300px;
         width: 70%;
         padding: 32px;
         scroll-snap-align: center;
@@ -89,10 +88,13 @@
             margin-right: auto;
         }
 
+        .services__card {
+            width: 25%;
+        }
+
         .services__spacer {
             min-width: 280px;
-            max-width: 300px;
-            width: 66%;
+            width: 25%;
         }
     }
 }
