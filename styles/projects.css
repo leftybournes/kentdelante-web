@@ -95,6 +95,11 @@
             flex-direction: row nowrap;
         }
 
+        .projects__iconContainer {
+            width: 45%;
+            flex: 0 0 auto;
+        }
+
         .projects__projectContent {
             width: 45%;
         }
