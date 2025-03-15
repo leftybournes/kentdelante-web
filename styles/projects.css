@@ -1,0 +1,114 @@
+.projects {
+    margin: 64px 0px 32px 0px;
+
+    .projects__container {
+        max-width: 1600px;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .projects__heading {
+        color: #fff;
+        font-size: 2.25rem;
+        font-weight: 600;
+        font-family: "Josefin Sans";
+        text-align: center;
+    }
+
+    .projects__project {
+        display: flex;
+        flex-flow: column;
+        column-gap: 64px;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .projects__project--reverse {
+        flex-flow: column-reverse;
+    }
+
+    .projects__iconContainer {
+        flex: 1 1 auto;
+    }
+
+    .projects__iconBackground {
+        background: #0f172a;
+        color: #475569;
+        border-radius: 16px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 16px 0px;
+        height: 100%;
+    }
+
+    .projects__icon {
+        width: 96px;
+        height: 96px;
+        margin: auto;
+    }
+
+    .projects__projectContent {
+        margin-top: 32px;
+    }
+
+    .projects__projectHeading {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .projects__projectDivider {
+        height: 1px;
+        background-color: #5d6674;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .projects__projectSubheading {
+        color: #d58e72;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .projects__projectSubheading:not(:first-child) {
+        margin-top: 32px;
+    }
+
+    .projects__projectText {
+        color: #fff;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .projects {
+        .projects__project {
+            flex-flow: row nowrap;
+        }
+
+        .projects__project--reverse {
+            flex-direction: row nowrap;
+        }
+
+        .projects__projectContent {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects {
+        .projects__container {
+            width: 80%;
+        }
+
+        .projects__project {
+            width: 100%;
+        }
+    }
+}

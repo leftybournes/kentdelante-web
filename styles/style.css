@@ -4,6 +4,7 @@
 @import "about.css";
 @import "skills.css";
 @import "services.css";
+@import "projects.css";
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -32,12 +33,3 @@ body {
  * xl - 1280px
  * 2xl - 1536px
 */
-
-/* @layer components { */
-/* 	.services-card { */
-/* 		@apply bg-[#FFFFFF1A] rounded-2xl p-8 snap-center */
-/*                text-white border border-[#D58E7280] min-w-[280px] */
-/*                backdrop-blur-xl md:w-1/3 md:max-w-[360px]; */
-/* 	} */
-/* } */
-
