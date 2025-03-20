@@ -5,6 +5,7 @@
 @import "skills.css";
 @import "services.css";
 @import "projects.css";
+@import "blog.css";
 
 *, *::before, *::after {
     box-sizing: border-box;
