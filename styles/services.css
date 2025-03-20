@@ -1,4 +1,6 @@
 .services {
+    padding: 96px 0px;
+
     .services__container {
         max-width: 1600px;
         width: 90%;

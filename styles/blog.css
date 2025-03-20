@@ -1,4 +1,6 @@
 .blog {
+    padding: 96px 0px;
+
     .blog__container {
         max-width: 1600px;
         width: 90%;

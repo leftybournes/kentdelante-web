@@ -1,4 +1,6 @@
 .about {
+    padding: 96px 0px;
+
     .about__container {
         margin: 0px auto;
         max-width: 1600px;
