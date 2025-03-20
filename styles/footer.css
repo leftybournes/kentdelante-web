@@ -1,0 +1,104 @@
+.footer {
+    padding-top: 192px;
+
+    .footer__ruler {
+        background-color: #fffc;
+        height: 1px;
+        width: 100%;
+    }
+
+    .footer__container {
+        max-width: 1600px;
+        width: 90%;
+        margin: 0px auto;
+        padding: 96px 32px 144px 32px;
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        column-gap: 192px;
+        row-gap: 64px;
+    }
+
+    .footer__heading {
+        font-family: "Josefin Sans";
+        font-weight: 600;
+        font-size: 2.25rem;
+        color: #fff;
+    }
+
+    .footer__sitemap {
+        display: flex;
+        flex-flow: column;
+        row-gap: 16px;
+        font-size: 1.5rem;
+        list-style-type: none;
+        margin-top: 32px;
+    }
+
+    .footer__sitemapLink {
+        text-decoration: none;
+        color: #fffc;
+    }
+
+    .footer__socials {
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 32px;
+        margin-top: 16px;
+        list-style-type: none;
+    }
+
+    .footer__subheading {
+        color: #fffc;
+        font-size: 1.5rem;
+        margin-top: 16px;
+    }
+
+    .footer__text {
+        color: #fffc;
+        font-size: 1.5rem;
+        margin-top: 64px;
+    }
+
+    .footer__enquiry {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .footer__enquiryName {
+        margin: 16px 0px;
+        background-color: #d9d9d9;
+        height: 48px;
+        border: none;
+        border-radius: 12px;
+        padding: 0px 16px;
+        font-size: 1.25rem;
+    }
+
+    .footer__enquiryMessage {
+        background-color: #d9d9d9;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .footer {
+        .footer__container {
+            padding-left: 0px;
+            padding-left: 0px;
+            flex-flow: row wrap;
+            justify-content: center;
+            row-gap: 128;
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .footer {
+        .footer__container {
+            width: 80%;
+        }
+    }
+}

@@ -493,38 +493,57 @@
         </div>
 	  </section>
 	</main>
-    <footer>
-      <div class="bg-white/80 h-px w-full mt-48 mb-24"></div>
-      <div class="container mx-auto pt-24 pb-36 px-8 flex flex-col justify-start
-                  gap-x-48 gap-y-16 sm:px-0 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-y-32">
+    <footer class="footer">
+      <div class="footer__ruler"></div>
+      <div class="footer__container">
         <div>
-          <h2 class="font-josefin font-semibold text-4xl text-white">
-            Sitemap
-          </h2>
-          <ul class="flex flex-col gap-y-4 text-white/80 text-2xl">
-            <li class="mt-4"><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Development Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li class="hidden"><a href="#certificates">Certificates</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="font-josefin font-semibold text-4xl text-white">Socials</h2>
-          <ul class="flex flex-row flex-nowrap gap-x-8 mt-4">
+          <h2 class="footer__heading">Sitemap</h2>
+          <ul class="footer__sitemap">
             <li>
-              <a href="https://github.com/leftybournes"
-                 target="_blank">
-                <img src="/img/GitHub_Invertocat_Light.svg"
-                     width="40"
-                class="size-10">
+              <a class="footer__sitemapLink" href="#home">
+                Home
               </a>
             </li>
             <li>
-              <a href="https://mastodon.online/@leftybournes"
-                 target="_blank">
+              <a class="footer__sitemapLink" href="#about">
+                About me
+              </a>
+            </li>
+            <li>
+              <a class="footer__sitemapLink" href="#skills">
+                Development Skills
+              </a>
+            </li>
+            <li>
+              <a class="footer__sitemapLink" href="#services">
+                Services
+              </a>
+            </li>
+            <li>
+              <a class="footer__sitemapLink" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a class="footer__sitemapLink" href="#blog">
+                Blog
+              </a>
+            </li>
+            <!-- <li class="hidden"><a href="#certificates">Certificates</a></li> -->
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__heading">Socials</h2>
+          <ul class="footer__socials flex flex-row flex-nowrap gap-x-8 mt-4">
+            <li>
+              <a href="https://github.com/leftybournes" target="_blank">
+                <img src="/img/GitHub_Invertocat_Light.svg"
+                     width="40"
+                     class="size-10">
+              </a>
+            </li>
+            <li>
+              <a href="https://mastodon.online/@leftybournes" target="_blank">
                 <img src="/img/mastodon_logo.svg"
                      width="40"
                      class="size-10">
@@ -534,16 +553,17 @@
         </div>
         <div>
           <div>
-            <h2 class="font-josefin font-semibold text-4xl text-white">Kent D. Delante</h2>
-            <p class="text-white/80 text-2xl mt-4">Passionate Software Developer</p>
+            <h2 class="footer__heading">Kent D. Delante</h2>
+            <p class="footer__subheading text-white/80 text-2xl mt-4">
+              Passionate Software Developer
+            </p>
           </div>
 
-          <div class="flex flex-col">
-            <div class="text-white/80 text-2xl mt-16">Talk to me</div>
+          <div class="footer__enquiry">
+            <div class="footer__text">Talk to me</div>
             <input type="text"
-                   class="my-4 bg-[#D9D9D9] h-12 rounded-lg px-4 text-xl">
-            <textarea class="bg-[#D9D9D9] rounded-lg text-xl p-4"
-                      rows="4"></textarea>
+                   class="footer__enquiryName">
+            <textarea class="footer__enquiryMessage" rows="4"></textarea>
           </div>
         </div>
       </div>

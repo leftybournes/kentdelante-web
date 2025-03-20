@@ -6,6 +6,7 @@
 @import "services.css";
 @import "projects.css";
 @import "blog.css";
+@import "footer.css";
 
 *, *::before, *::after {
     box-sizing: border-box;
