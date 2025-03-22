@@ -78,7 +78,7 @@
         .blog__blogs {
             column-gap: 32px;
             flex-flow: row wrap;
-            /* align-items: stretch; */
+            align-items: stretch;
             justify-content: center;
         }
 
